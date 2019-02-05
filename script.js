@@ -35,7 +35,7 @@ function win(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     uimg = getImg(userChoice);
     cimg = getImg(computerChoice);
-    result_div.innerHTML = `${uimg} - ${cimg} <br> WIN ➕`;
+    result_div.innerHTML = `${uimg} x ${cimg} <br> WIN ➕`;
     document.getElementById(userChoice).classList.add('green-glow');
     setTimeout(() =>  document.getElementById(userChoice).classList.remove('green-glow'), 300);
 }
@@ -46,7 +46,7 @@ function lose(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     uimg = getImg(userChoice);
     cimg = getImg(computerChoice);
-    result_div.innerHTML = `${cimg} - ${uimg} <br> LOSE ➖`;
+    result_div.innerHTML = `${cimg} x ${uimg} <br> LOSE ➖`;
     document.getElementById(userChoice).classList.add('red-glow');
     setTimeout(() =>  document.getElementById(userChoice).classList.remove('red-glow'), 300);
 }
@@ -56,7 +56,7 @@ function draw(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     uimg = getImg(userChoice);
     cimg = getImg(computerChoice);
-    result_div.innerHTML = `${cimg} -  ${cimg} <br> DRAW 🚫`;
+    result_div.innerHTML = `${cimg} x  ${cimg} <br> DRAW 🚫`;
     document.getElementById(userChoice).classList.add('blue-glow');
     setTimeout(() =>  document.getElementById(userChoice).classList.remove('blue-glow'), 300);
 }
